@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./userLogin.css">
+    <title>Nature Cart | Checkout</title>
+</head>
+<body>
+        <header>
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top text-white">
+                    <a class="text-white navbar-brand" href="./index.html">
+                        <i class="fab fa-pagelines"></i> Nature Cart
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+            
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto menu">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline mt-2 mt-md-0">
+                            <a class="text-white nav-link" href="cart.html">
+                                <i class="text-warning fas fa-shopping-cart"></i> Shopping Cart <i style="color:yellow;" id="cart_n"></i>
+                            </a>
+                            <a class="nav-link disabled text-white" href="admin/login.html">
+                                <i class="far fa-user"></i> Administrator
+                            </a>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+    <p class="warning p-2"></p>
+    <form autocomplete="off" id="form" class="p-4">
+        
+        <p class="h4 mb-4">Create account</p>
+
+        <label for="name" class="userName">Your name</label><span>&nbsp;*</span>
+        <input type="text" required id="name" class="form-control mb-4">
+
+        <label for="email" class="emailLabel">E-mail</label><span>&nbsp;*</span>
+        <input type="email" required id="email" class="form-control mb-4">
+
+        <label for="contact" class="emailLabel">Contact number</label><span>&nbsp;*</span>
+        <input type="number" required id="contact" class="form-control mb-4">
+
+        <label for="password" class="passwordLabel">Password</label><span>&nbsp;*</span>
+        <input type="password" required id="password" class="form-control mb-4">
+
+        <label for="passwordAgain" class="passwordLabel">Password again</label><span>&nbsp;*</span>
+        <input type="password" required id="passwordAgain" class="form-control mb-4">
+
+        <label for="address" class="address">Address</label><span>&nbsp;*</span>
+        <textarea required id="textarea" class="form-control mb-4" rows="5"></textarea>
+
+        <button type="submit" class="btn btn-warning btn-block" id="signIn">Create your account</button>
+    </form>
+    <!-- Footer -->
+	<footer class="bg1">
+            <div class="container footer-first">
+                <div class="row">
+                        <div class="copyright">
+                            Copyright &copy; 2019 All rights reserved  | <a href="index.html" target="_blank">Nature Cart</a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+    <script src="./userLogin.js"></script>
+</body>
+</html>

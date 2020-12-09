@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" href="styles.css">
+    <title>Nature Cart | Cart</title>
+</head>
+<body onload="render()">
+<header>
+    <nav class="navbar navbar-dark navbar-expand-md text-white">
+            <a class="text-white navbar-brand" href="index.html">
+                    <i class="fab fa-pagelines"></i> Nature Cart
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+        
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <a class="text-white nav-link" href="#">
+                            <i class="text-warning fas fa-shopping-cart"></i> Shopping Cart <i style="color:yellow;" id="cart_n"></i>
+                        </a>
+                        <a class="nav-link disabled text-white" href="admin/login.html">
+                            <i class="far fa-user"></i> Administrator
+                        </a>
+                    </form>
+                </div>
+    </nav>
+</header>
+<div class="container mt-3">
+    <main role="main">
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+    </main>
+</div>
+<!-- Footer -->
+	<footer class="bg1">
+		<div class="container footer-first">
+			<div class="row">
+					<div class="copyright">
+						Copyright &copy; 2019 All rights reserved  | <a href="index.html" target="_blank">Nature Cart</a>
+					</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script src="./cart.js"></script>
+</body>
+</html>

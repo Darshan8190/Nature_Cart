@@ -1,0 +1,31 @@
+.imgFilter{
+    filter: brightness(0.8);
+}
+.navbar{
+    background: #0a1563;
+    padding: 20px;
+}
+.btn-yellow{
+    background: #ffff00;
+    color: #000;
+}
+h2 {
+    text-align: center;
+    margin: 28px 0px 40px 0px;
+    font-weight: bold !important;
+    color: #0a1563;
+    font-size: 44px;
+}
+footer.bg1 {
+    background: #0a1563;
+    padding: 20px 0px;
+    color: #fff;
+}
+.copyright a {
+    color: yellow;
+}
+.copyright{
+        text-align: center;
+    width:100%;
+    display: block;
+}
